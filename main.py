@@ -122,14 +122,18 @@ def _manifest_noise(manifest: dict, default: str) -> str:
 def _decomposition_view_path(run_dir: Path, sample: dict, sample_result: dict) -> Path:
     from src import visualization_artifacts
 
-    stored = sample_result.get("decomposition_view_path")
-    if stored:
-        return Path(stored)
-    return visualization_artifacts.decomposition_view_path(
+    local_path = visualization_artifacts.decomposition_view_path(
         run_dir,
         sample["relative_path"],
         sample["sample_name"],
     )
+    if local_path.exists():
+        return local_path
+
+    stored = sample_result.get("decomposition_view_path")
+    if stored and Path(stored).exists():
+        return Path(stored)
+    return local_path
 
 
 def _recompute_decomposition_view(args: argparse.Namespace, manifest: dict, run_dir: Path, sample: dict, view_path: Path) -> Path:
