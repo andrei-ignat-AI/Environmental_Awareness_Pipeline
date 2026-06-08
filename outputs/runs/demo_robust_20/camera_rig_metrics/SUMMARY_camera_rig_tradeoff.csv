@@ -1,0 +1,8 @@
+Comparison,Metric,3Cam Value,4CamAsym Value,Change,Unit,Preferred Direction
+3Cam To 4CamAsym,Redundant Surface Gain,44.03051619934608,65.38183321277256,21.351317013426474,percentage points,higher
+3Cam To 4CamAsym,Strong Redundancy Gain,7.264648134752506,28.853675659412296,21.589027524659794,percentage points,higher
+3Cam To 4CamAsym,Single-View Surface Reduction,39.27870207709,23.550687196445182,15.728014880644825,percentage points,lower
+3Cam To 4CamAsym,Blind Surface Reduction,15.759016224036376,10.13940427238993,5.619611951646446,percentage points,lower
+3Cam To 4CamAsym,Not-Proven-Free Volume Reduction,9.868824976195116,8.325092002661735,1.5437329735333807,percentage points,lower
+3Cam To 4CamAsym,Added Raw Depth Data,3.6864,4.9152,1.2287999999999997,MB/sample,lower cost
+3Cam To 4CamAsym,Added Cameras,3.0,4.0,1.0,camera,lower cost

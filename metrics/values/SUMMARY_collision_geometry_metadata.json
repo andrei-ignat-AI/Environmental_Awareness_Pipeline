@@ -1,0 +1,19 @@
+{
+  "purpose": "Robert-style collision-geometry metrics for the full robust pipeline run.",
+  "source_run_id": "full_robust_160",
+  "source_inputs": [
+    "outputs/runs/full_robust_160/run_manifest.json",
+    "DepthCaptures/<rig>/<layout>/<sample>/voxel_props_occupancy.raw",
+    "DepthCaptures/<rig>/<layout>/<sample>/voxel_metadata.json",
+    "outputs/runs/full_robust_160/mujoco_exports/<rig>/<layout>/<sample>/<sample>_voxels.ply"
+  ],
+  "method": "Copied Robert2 weighted sparse containment metric.",
+  "robot_scope": "Robot-off export; robot state is not evaluated by these metrics.",
+  "outputs": {
+    "summary": "SUMMARY_collision_geometry.csv",
+    "compact_summary": "SUMMARY_collision_geometry_compact.csv",
+    "bulk_per_sample": "BULK_collision_geometry_per_sample.csv",
+    "robert_style_summary": "SUMMARY_collision_geometry_robert_style.csv",
+    "robert_style_bulk": "BULK_collision_geometry_robert_style_per_sample.csv"
+  }
+}

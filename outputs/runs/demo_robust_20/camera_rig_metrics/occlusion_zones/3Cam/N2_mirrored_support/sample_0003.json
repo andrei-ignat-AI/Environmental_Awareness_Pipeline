@@ -1,0 +1,35 @@
+{
+  "rig_id": "3Cam",
+  "layout": "N2_mirrored_support",
+  "sample_name": "sample_0003",
+  "sample_index": 3,
+  "metric_scope": "roi",
+  "roi_bounds": {
+    "x": [
+      -4.0,
+      4.0
+    ],
+    "y": [
+      0.0,
+      2.35
+    ],
+    "z": [
+      -2.0,
+      2.0
+    ]
+  },
+  "voxel_size_m": 0.05000000074505806,
+  "grid_shape": [
+    198,
+    54,
+    118
+  ],
+  "num_depth_cameras": 3,
+  "depth_visibility_tolerance_m": 0.075,
+  "free_volume_voxels_total": 543760,
+  "certified_free_volume_fraction": 0.9015484772693836,
+  "single_view_certified_free_volume_fraction": 0.2941702221568339,
+  "redundantly_certified_free_volume_fraction": 0.6073782551125496,
+  "unknown_free_volume_fraction": 0.09845152273061644,
+  "semantics_note": "unknown_free_mask means not certified free by any camera; it is not occupied obstacle geometry."
+}

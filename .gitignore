@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+*.so
+.DS_Store
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Generated run artifacts are large and reproducible from DepthCaptures.
+outputs/
+
+# Local scratch exports/viewer temp files.
+tmp/
+temp/

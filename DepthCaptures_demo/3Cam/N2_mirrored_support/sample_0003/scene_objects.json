@@ -1,0 +1,718 @@
+{
+    "objects": [
+        {
+            "objectId": "room_interior_bounds",
+            "semanticId": "room_interior_bounds",
+            "category": "room",
+            "surface": "Room",
+            "position": {
+                "x": 0.0,
+                "y": 1.350000023841858,
+                "z": 0.0
+            },
+            "eulerRotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 9.899999618530274,
+                "y": 2.700000047683716,
+                "z": 5.900000095367432
+            },
+            "boundsSize": {
+                "x": 9.899999618530274,
+                "y": 2.700000047683716,
+                "z": 5.900000095367432
+            },
+            "clinicalConfig": "",
+            "layoutFamily": "",
+            "primaryOperatorSideZ": 0,
+            "semanticZone": "",
+            "targetBoundsMeters": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "sampledJitterMeters": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "sampledYawJitterDegrees": 0.0,
+            "associatedWith": ""
+        },
+        {
+            "objectId": "table_top",
+            "semanticId": "table_top",
+            "category": "table",
+            "surface": "Table",
+            "position": {
+                "x": 1.5,
+                "y": 0.8500000238418579,
+                "z": 0.0
+            },
+            "eulerRotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 3.190000057220459,
+                "y": 0.059999942779541019,
+                "z": 0.5
+            },
+            "boundsSize": {
+                "x": 3.190000057220459,
+                "y": 0.059999942779541019,
+                "z": 0.5
+            },
+            "clinicalConfig": "",
+            "layoutFamily": "",
+            "primaryOperatorSideZ": 0,
+            "semanticZone": "",
+            "targetBoundsMeters": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "sampledJitterMeters": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "sampledYawJitterDegrees": 0.0,
+            "associatedWith": ""
+        },
+        {
+            "objectId": "rail_left",
+            "semanticId": "rail_left",
+            "category": "table",
+            "surface": "Table",
+            "position": {
+                "x": 1.5,
+                "y": 0.8700000047683716,
+                "z": -0.23000000417232514
+            },
+            "eulerRotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 2.989999771118164,
+                "y": 0.019999980926513673,
+                "z": 0.02000001072883606
+            },
+            "boundsSize": {
+                "x": 2.989999771118164,
+                "y": 0.019999980926513673,
+                "z": 0.02000001072883606
+            },
+            "clinicalConfig": "",
+            "layoutFamily": "",
+            "primaryOperatorSideZ": 0,
+            "semanticZone": "",
+            "targetBoundsMeters": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "sampledJitterMeters": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "sampledYawJitterDegrees": 0.0,
+            "associatedWith": ""
+        },
+        {
+            "objectId": "rail_right",
+            "semanticId": "rail_right",
+            "category": "table",
+            "surface": "Table",
+            "position": {
+                "x": 1.5,
+                "y": 0.8700000047683716,
+                "z": 0.23000000417232514
+            },
+            "eulerRotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 2.989999771118164,
+                "y": 0.019999980926513673,
+                "z": 0.02000001072883606
+            },
+            "boundsSize": {
+                "x": 2.989999771118164,
+                "y": 0.019999980926513673,
+                "z": 0.02000001072883606
+            },
+            "clinicalConfig": "",
+            "layoutFamily": "",
+            "primaryOperatorSideZ": 0,
+            "semanticZone": "",
+            "targetBoundsMeters": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "sampledJitterMeters": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "sampledYawJitterDegrees": 0.0,
+            "associatedWith": ""
+        },
+        {
+            "objectId": "pedestal",
+            "semanticId": "pedestal",
+            "category": "table",
+            "surface": "Table",
+            "position": {
+                "x": 2.200000047683716,
+                "y": 0.44999998807907107,
+                "z": 0.0
+            },
+            "eulerRotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 0.2800002098083496,
+                "y": 0.7400000095367432,
+                "z": 0.23999999463558198
+            },
+            "boundsSize": {
+                "x": 0.2800002098083496,
+                "y": 0.7400000095367432,
+                "z": 0.23999999463558198
+            },
+            "clinicalConfig": "",
+            "layoutFamily": "",
+            "primaryOperatorSideZ": 0,
+            "semanticZone": "",
+            "targetBoundsMeters": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "sampledJitterMeters": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "sampledYawJitterDegrees": 0.0,
+            "associatedWith": ""
+        },
+        {
+            "objectId": "table_base",
+            "semanticId": "table_base",
+            "category": "table",
+            "surface": "Table",
+            "position": {
+                "x": 2.200000047683716,
+                "y": 0.03999999910593033,
+                "z": 0.0
+            },
+            "eulerRotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 0.2800002098083496,
+                "y": 0.07999999821186066,
+                "z": 0.23999999463558198
+            },
+            "boundsSize": {
+                "x": 0.2800002098083496,
+                "y": 0.07999999821186066,
+                "z": 0.23999999463558198
+            },
+            "clinicalConfig": "",
+            "layoutFamily": "",
+            "primaryOperatorSideZ": 0,
+            "semanticZone": "",
+            "targetBoundsMeters": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "sampledJitterMeters": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "sampledYawJitterDegrees": 0.0,
+            "associatedWith": ""
+        },
+        {
+            "objectId": "Prop_00_patient",
+            "semanticId": "patient",
+            "category": "patient",
+            "surface": "Table",
+            "position": {
+                "x": 0.7411272525787354,
+                "y": 0.9088866710662842,
+                "z": -0.11306305974721909
+            },
+            "eulerRotation": {
+                "x": 0.0,
+                "y": 90.43946838378906,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0000001192092896,
+                "y": 1.0,
+                "z": 1.0000001192092896
+            },
+            "boundsSize": {
+                "x": 1.8690552711486817,
+                "y": 0.2697138786315918,
+                "z": 0.6567491292953491
+            },
+            "clinicalConfig": "neuro",
+            "layoutFamily": "N2_mirrored_support",
+            "primaryOperatorSideZ": 1,
+            "semanticZone": "table_patient",
+            "targetBoundsMeters": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "sampledJitterMeters": {
+                "x": -0.010872715152800084,
+                "y": 0.0,
+                "z": 0.0069369361735880379
+            },
+            "sampledYawJitterDegrees": 0.439464807510376,
+            "associatedWith": ""
+        },
+        {
+            "objectId": "Prop_01_doctor_operator",
+            "semanticId": "doctor_operator",
+            "category": "doctor_operator",
+            "surface": "Floor",
+            "position": {
+                "x": 2.3526041507720949,
+                "y": 1.657892107963562,
+                "z": 1.6601768732070923
+            },
+            "eulerRotation": {
+                "x": 0.0,
+                "y": 174.62130737304688,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "boundsSize": {
+                "x": 0.7500452995300293,
+                "y": 1.8445913791656495,
+                "z": 0.776526927947998
+            },
+            "clinicalConfig": "neuro",
+            "layoutFamily": "N2_mirrored_support",
+            "primaryOperatorSideZ": 1,
+            "semanticZone": "operator_lane",
+            "targetBoundsMeters": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "sampledJitterMeters": {
+                "x": 0.10260426253080368,
+                "y": 0.0,
+                "z": 0.06017686799168587
+            },
+            "sampledYawJitterDegrees": -5.378685474395752,
+            "associatedWith": "radiation_shield"
+        },
+        {
+            "objectId": "Prop_02_medical_trolley",
+            "semanticId": "medical_trolley",
+            "category": "medical_trolley",
+            "surface": "Floor",
+            "position": {
+                "x": -0.573125958442688,
+                "y": 0.2299165278673172,
+                "z": 2.2087581157684328
+            },
+            "eulerRotation": {
+                "x": 270.0,
+                "y": 198.38912963867188,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 274.3343505859375,
+                "y": 217.90602111816407,
+                "z": 269.6322326660156
+            },
+            "boundsSize": {
+                "x": 0.8184918761253357,
+                "y": 0.8200000524520874,
+                "z": 0.597649335861206
+            },
+            "clinicalConfig": "neuro",
+            "layoutFamily": "N2_mirrored_support",
+            "primaryOperatorSideZ": 1,
+            "semanticZone": "operator_peripheral_equipment",
+            "targetBoundsMeters": {
+                "x": 0.8500000238418579,
+                "y": 0.8199999928474426,
+                "z": 0.550000011920929
+            },
+            "sampledJitterMeters": {
+                "x": 0.07687404751777649,
+                "y": 0.0,
+                "z": 0.008758039213716984
+            },
+            "sampledYawJitterDegrees": 18.38913345336914,
+            "associatedWith": "doctor_operator"
+        },
+        {
+            "objectId": "Prop_03_doctor_anesthesia",
+            "semanticId": "doctor_anesthesia",
+            "category": "doctor_anesthesia",
+            "surface": "Floor",
+            "position": {
+                "x": 2.2619271278381349,
+                "y": 1.657892107963562,
+                "z": -1.1973071098327637
+            },
+            "eulerRotation": {
+                "x": 0.0,
+                "y": 30.556251525878908,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "boundsSize": {
+                "x": 0.8920493125915527,
+                "y": 1.8445913791656495,
+                "z": 0.9109988212585449
+            },
+            "clinicalConfig": "neuro",
+            "layoutFamily": "N2_mirrored_support",
+            "primaryOperatorSideZ": 1,
+            "semanticZone": "head_anesthesia_corner",
+            "targetBoundsMeters": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "sampledJitterMeters": {
+                "x": -0.08807280659675598,
+                "y": 0.0,
+                "z": 0.05269293114542961
+            },
+            "sampledYawJitterDegrees": -14.443743705749512,
+            "associatedWith": "anesthesia_machine"
+        },
+        {
+            "objectId": "Prop_04_anesthesia_machine",
+            "semanticId": "anesthesia_machine",
+            "category": "anesthesia_machine",
+            "surface": "Floor",
+            "position": {
+                "x": 3.444579839706421,
+                "y": 0.0855991393327713,
+                "z": -1.652137041091919
+            },
+            "eulerRotation": {
+                "x": 270.0,
+                "y": 99.85244750976563,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 66.2326889038086,
+                "y": 71.0573959350586,
+                "z": 86.3834228515625
+            },
+            "boundsSize": {
+                "x": 1.1472997665405274,
+                "y": 1.4799997806549073,
+                "z": 0.7911696434020996
+            },
+            "clinicalConfig": "neuro",
+            "layoutFamily": "N2_mirrored_support",
+            "primaryOperatorSideZ": 1,
+            "semanticZone": "head_anesthesia_corner",
+            "targetBoundsMeters": {
+                "x": 1.149999976158142,
+                "y": 1.4800000190734864,
+                "z": 0.7900000214576721
+            },
+            "sampledJitterMeters": {
+                "x": 0.09457984566688538,
+                "y": 0.0,
+                "z": 0.04786304011940956
+            },
+            "sampledYawJitterDegrees": 9.852449417114258,
+            "associatedWith": "doctor_anesthesia"
+        },
+        {
+            "objectId": "Prop_05_radiation_shield",
+            "semanticId": "radiation_shield",
+            "category": "radiation_shield",
+            "surface": "Floor",
+            "position": {
+                "x": 1.9446319341659547,
+                "y": 0.022499913349747659,
+                "z": 1.0999592542648316
+            },
+            "eulerRotation": {
+                "x": 0.0,
+                "y": 89.84444427490235,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 0.6987378597259522,
+                "y": 1.4448668956756592,
+                "z": 1.3307491540908814
+            },
+            "boundsSize": {
+                "x": 0.7992620468139648,
+                "y": 1.899999976158142,
+                "z": 0.4206862449645996
+            },
+            "clinicalConfig": "neuro",
+            "layoutFamily": "N2_mirrored_support",
+            "primaryOperatorSideZ": 1,
+            "semanticZone": "operator_lane",
+            "targetBoundsMeters": {
+                "x": 0.800000011920929,
+                "y": 1.899999976158142,
+                "z": 0.41999998688697817
+            },
+            "sampledJitterMeters": {
+                "x": -0.10536801069974899,
+                "y": 0.0,
+                "z": 0.04995933920145035
+            },
+            "sampledYawJitterDegrees": -0.15555739402770997,
+            "associatedWith": "doctor_operator"
+        },
+        {
+            "objectId": "Prop_06_uhd_tv",
+            "semanticId": "uhd_tv",
+            "category": "uhd_tv",
+            "surface": "Wall",
+            "position": {
+                "x": 1.149999976158142,
+                "y": 1.75,
+                "z": -2.0
+            },
+            "eulerRotation": {
+                "x": 270.0,
+                "y": 270.0,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 7.0571160316467289,
+                "y": 2.1683409214019777,
+                "z": 2.548701286315918
+            },
+            "boundsSize": {
+                "x": 1.4500000476837159,
+                "y": 1.3408820629119874,
+                "z": 0.3600001335144043
+            },
+            "clinicalConfig": "neuro",
+            "layoutFamily": "N2_mirrored_support",
+            "primaryOperatorSideZ": 1,
+            "semanticZone": "screen_side",
+            "targetBoundsMeters": {
+                "x": 1.4500000476837159,
+                "y": 0.8799999952316284,
+                "z": 0.2199999988079071
+            },
+            "sampledJitterMeters": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "sampledYawJitterDegrees": 0.0,
+            "associatedWith": "doctor_operator"
+        },
+        {
+            "objectId": "Prop_07_waste_bin",
+            "semanticId": "waste_bin",
+            "category": "waste_bin",
+            "surface": "Floor",
+            "position": {
+                "x": 4.39732027053833,
+                "y": 0.012517282739281655,
+                "z": 2.561569929122925
+            },
+            "eulerRotation": {
+                "x": 0.0,
+                "y": 323.8885192871094,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 7.248950481414795,
+                "y": 9.328980445861817,
+                "z": 7.058886528015137
+            },
+            "boundsSize": {
+                "x": 0.43473339080810549,
+                "y": 0.7799999117851257,
+                "z": 0.4441871643066406
+            },
+            "clinicalConfig": "neuro",
+            "layoutFamily": "N2_mirrored_support",
+            "primaryOperatorSideZ": 1,
+            "semanticZone": "waste_corner",
+            "targetBoundsMeters": {
+                "x": 0.4399999976158142,
+                "y": 0.7799999713897705,
+                "z": 0.4399999976158142
+            },
+            "sampledJitterMeters": {
+                "x": -0.0026799291372299196,
+                "y": 0.0,
+                "z": 0.16156989336013795
+            },
+            "sampledYawJitterDegrees": -171.11148071289063,
+            "associatedWith": ""
+        },
+        {
+            "objectId": "Prop_08_doctor_ultrasound",
+            "semanticId": "doctor_ultrasound",
+            "category": "doctor_ultrasound",
+            "surface": "Floor",
+            "position": {
+                "x": -2.966627836227417,
+                "y": 1.657892107963562,
+                "z": -1.8053159713745118
+            },
+            "eulerRotation": {
+                "x": 0.0,
+                "y": 314.0938415527344,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "boundsSize": {
+                "x": 0.9106101989746094,
+                "y": 1.8445913791656495,
+                "z": 0.898768424987793
+            },
+            "clinicalConfig": "neuro",
+            "layoutFamily": "N2_mirrored_support",
+            "primaryOperatorSideZ": 1,
+            "semanticZone": "peripheral_support",
+            "targetBoundsMeters": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "sampledJitterMeters": {
+                "x": -0.11662793159484863,
+                "y": 0.0,
+                "z": 0.09468403458595276
+            },
+            "sampledYawJitterDegrees": -0.9061619639396668,
+            "associatedWith": "ultrasound"
+        },
+        {
+            "objectId": "Prop_09_ultrasound",
+            "semanticId": "ultrasound",
+            "category": "ultrasound",
+            "surface": "Floor",
+            "position": {
+                "x": -3.4415769577026369,
+                "y": 0.011869082227349282,
+                "z": -1.8623977899551392
+            },
+            "eulerRotation": {
+                "x": 270.0,
+                "y": 261.3625183105469,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 84.05416107177735,
+                "y": 94.09156036376953,
+                "z": 91.51506805419922
+            },
+            "boundsSize": {
+                "x": 0.8913192749023438,
+                "y": 1.2999999523162842,
+                "z": 0.6032657623291016
+            },
+            "clinicalConfig": "neuro",
+            "layoutFamily": "N2_mirrored_support",
+            "primaryOperatorSideZ": 1,
+            "semanticZone": "peripheral_support",
+            "targetBoundsMeters": {
+                "x": 0.8999999761581421,
+                "y": 1.2999999523162842,
+                "z": 0.5899999737739563
+            },
+            "sampledJitterMeters": {
+                "x": 0.2084231674671173,
+                "y": 0.0,
+                "z": -0.012397728860378266
+            },
+            "sampledYawJitterDegrees": -8.637476921081543,
+            "associatedWith": "doctor_ultrasound"
+        },
+        {
+            "objectId": "Prop_10_ceiling_lamp",
+            "semanticId": "ceiling_lamp",
+            "category": "ceiling_lamp",
+            "surface": "Ceiling",
+            "position": {
+                "x": 2.1925039291381838,
+                "y": 2.567500114440918,
+                "z": 0.5876265168190002
+            },
+            "eulerRotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 0.6199999451637268,
+                "y": 0.07999999821186066,
+                "z": 0.619999885559082
+            },
+            "boundsSize": {
+                "x": 0.6200000047683716,
+                "y": 0.1599999964237213,
+                "z": 0.6200000047683716
+            },
+            "clinicalConfig": "neuro",
+            "layoutFamily": "N2_mirrored_support",
+            "primaryOperatorSideZ": 1,
+            "semanticZone": "ceiling_over_table",
+            "targetBoundsMeters": {
+                "x": 0.6200000047683716,
+                "y": 0.1599999964237213,
+                "z": 0.6200000047683716
+            },
+            "sampledJitterMeters": {
+                "x": 0.09250400960445404,
+                "y": 0.0,
+                "z": -0.012373489327728749
+            },
+            "sampledYawJitterDegrees": 0.0,
+            "associatedWith": ""
+        }
+    ]
+}

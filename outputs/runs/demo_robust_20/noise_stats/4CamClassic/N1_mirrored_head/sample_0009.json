@@ -1,0 +1,203 @@
+{
+  "enabled": true,
+  "profile": "robust",
+  "profile_version": "robust",
+  "global_seed": 20260602,
+  "totals": {
+    "original_valid_count": 1198441,
+    "valid_after_count": 1189275,
+    "removed_by_active_range_count": 280,
+    "edge_dropout_count": 8235,
+    "far_dropout_count": 466,
+    "flying_pixel_count": 1401,
+    "outlier_count": 240,
+    "outlier_deleted_count": 189,
+    "outlier_displaced_count": 51
+  },
+  "camera_stats": [
+    {
+      "enabled": true,
+      "profile": "robust",
+      "profile_version": "robust",
+      "range_mode_m": 8.3,
+      "active_min_m": 0.3,
+      "active_max_m": 8.3,
+      "depth_path": "/Users/_iggnat_/Documents/TUe/Year 4/Q3/Team Internship/AzurionZzz/Environmental_Awareness_Pipeline/DepthCaptures_demo/4CamClassic/N1_mirrored_head/sample_0009/cam0_depth.raw",
+      "sample_key": "4CamClassic/N1_mirrored_head/sample_0009",
+      "camera_index": 0,
+      "seed": 1314684809,
+      "bias_seed": 3302412985,
+      "camera_bias_m": 0.002316050620260563,
+      "original_valid_count": 299093,
+      "edge_risk_count": 69664,
+      "flying_pixel_count": 369,
+      "removed_by_active_range_count": 85,
+      "edge_dropout_count": 2076,
+      "far_dropout_count": 99,
+      "outlier_count": 64,
+      "outlier_deleted_count": 47,
+      "outlier_displaced_count": 17,
+      "valid_after_count": 296786,
+      "axial_delta_m": {
+        "mean": 0.0022497652666869775,
+        "std": 0.021827220142017753,
+        "p95": 0.013770359116308972,
+        "p99": 0.026657310552804184
+      },
+      "lateral_enabled": true,
+      "lateral_seed": 3705594509,
+      "lateral_jitter_px": 0.03,
+      "u_offset_px": {
+        "mean": 7.380504193134559e-05,
+        "std": 0.03002321970070075,
+        "p95": 0.0589400588775094,
+        "p99": 0.07734894760344879
+      },
+      "v_offset_px": {
+        "mean": -2.4795131223526934e-05,
+        "std": 0.029990156293857897,
+        "p95": 0.058761451683625655,
+        "p99": 0.07726757247769199
+      },
+      "projected_point_count": 296762
+    },
+    {
+      "enabled": true,
+      "profile": "robust",
+      "profile_version": "robust",
+      "range_mode_m": 8.3,
+      "active_min_m": 0.3,
+      "active_max_m": 8.3,
+      "depth_path": "/Users/_iggnat_/Documents/TUe/Year 4/Q3/Team Internship/AzurionZzz/Environmental_Awareness_Pipeline/DepthCaptures_demo/4CamClassic/N1_mirrored_head/sample_0009/cam1_depth.raw",
+      "sample_key": "4CamClassic/N1_mirrored_head/sample_0009",
+      "camera_index": 1,
+      "seed": 819011682,
+      "bias_seed": 1863961282,
+      "camera_bias_m": -0.00047389349449544077,
+      "original_valid_count": 299872,
+      "edge_risk_count": 63998,
+      "flying_pixel_count": 278,
+      "removed_by_active_range_count": 60,
+      "edge_dropout_count": 1868,
+      "far_dropout_count": 94,
+      "outlier_count": 51,
+      "outlier_deleted_count": 41,
+      "outlier_displaced_count": 10,
+      "valid_after_count": 297809,
+      "axial_delta_m": {
+        "mean": -0.0004282431779357594,
+        "std": 0.014400802435313777,
+        "p95": 0.01265412567159155,
+        "p99": 0.025562693568625647
+      },
+      "lateral_enabled": true,
+      "lateral_seed": 585978073,
+      "lateral_jitter_px": 0.03,
+      "u_offset_px": {
+        "mean": 6.314412964515794e-05,
+        "std": 0.03000734344899394,
+        "p95": 0.05881830811889024,
+        "p99": 0.07725352095279554
+      },
+      "v_offset_px": {
+        "mean": 8.950227309002005e-06,
+        "std": 0.030004873113652356,
+        "p95": 0.05886445042774763,
+        "p99": 0.07759462160452882
+      },
+      "projected_point_count": 297775
+    },
+    {
+      "enabled": true,
+      "profile": "robust",
+      "profile_version": "robust",
+      "range_mode_m": 8.3,
+      "active_min_m": 0.3,
+      "active_max_m": 8.3,
+      "depth_path": "/Users/_iggnat_/Documents/TUe/Year 4/Q3/Team Internship/AzurionZzz/Environmental_Awareness_Pipeline/DepthCaptures_demo/4CamClassic/N1_mirrored_head/sample_0009/cam2_depth.raw",
+      "sample_key": "4CamClassic/N1_mirrored_head/sample_0009",
+      "camera_index": 2,
+      "seed": 274103623,
+      "bias_seed": 3389415854,
+      "camera_bias_m": -0.0025107711197767195,
+      "original_valid_count": 299455,
+      "edge_risk_count": 73405,
+      "flying_pixel_count": 381,
+      "removed_by_active_range_count": 45,
+      "edge_dropout_count": 2102,
+      "far_dropout_count": 148,
+      "outlier_count": 63,
+      "outlier_deleted_count": 45,
+      "outlier_displaced_count": 18,
+      "valid_after_count": 297117,
+      "axial_delta_m": {
+        "mean": -0.002548326116714522,
+        "std": 0.009901445913039722,
+        "p95": 0.015138965019637147,
+        "p99": 0.029897533068428246
+      },
+      "lateral_enabled": true,
+      "lateral_seed": 281782879,
+      "lateral_jitter_px": 0.03,
+      "u_offset_px": {
+        "mean": -7.724078906532342e-06,
+        "std": 0.030017619449702177,
+        "p95": 0.058834069325697846,
+        "p99": 0.0774410907116718
+      },
+      "v_offset_px": {
+        "mean": -1.6476733115349785e-05,
+        "std": 0.030051019930132584,
+        "p95": 0.058941184991339976,
+        "p99": 0.0776425564269793
+      },
+      "projected_point_count": 297087
+    },
+    {
+      "enabled": true,
+      "profile": "robust",
+      "profile_version": "robust",
+      "range_mode_m": 8.3,
+      "active_min_m": 0.3,
+      "active_max_m": 8.3,
+      "depth_path": "/Users/_iggnat_/Documents/TUe/Year 4/Q3/Team Internship/AzurionZzz/Environmental_Awareness_Pipeline/DepthCaptures_demo/4CamClassic/N1_mirrored_head/sample_0009/cam3_depth.raw",
+      "sample_key": "4CamClassic/N1_mirrored_head/sample_0009",
+      "camera_index": 3,
+      "seed": 2131745332,
+      "bias_seed": 3901658034,
+      "camera_bias_m": 0.002000478665582085,
+      "original_valid_count": 300021,
+      "edge_risk_count": 73179,
+      "flying_pixel_count": 373,
+      "removed_by_active_range_count": 90,
+      "edge_dropout_count": 2189,
+      "far_dropout_count": 125,
+      "outlier_count": 62,
+      "outlier_deleted_count": 56,
+      "outlier_displaced_count": 6,
+      "valid_after_count": 297563,
+      "axial_delta_m": {
+        "mean": 0.0019710685137663427,
+        "std": 0.009312079537809322,
+        "p95": 0.013517811674968743,
+        "p99": 0.027256314529731113
+      },
+      "lateral_enabled": true,
+      "lateral_seed": 1521954007,
+      "lateral_jitter_px": 0.03,
+      "u_offset_px": {
+        "mean": -9.412057528684498e-05,
+        "std": 0.029954280380485195,
+        "p95": 0.058859072146274595,
+        "p99": 0.07749104081573893
+      },
+      "v_offset_px": {
+        "mean": -3.582603297948605e-05,
+        "std": 0.02996814542762246,
+        "p95": 0.058777869584952826,
+        "p99": 0.07720808807556848
+      },
+      "projected_point_count": 297515
+    }
+  ]
+}

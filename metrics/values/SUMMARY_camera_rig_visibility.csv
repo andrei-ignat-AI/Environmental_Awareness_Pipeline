@@ -1,0 +1,5 @@
+Rig,Cameras,Raw Depth MB/Sample,Observable Surface (%),Redundant Surface (%),Strong Redundancy (%),Single-View Surface (%),Blind Surface (%),Navigation Visibility Score (%),Stakeholder Interpretation
+4CamClassic,4,4.9152,90.02617699478337,62.713448076609964,9.930745788528057,26.580879099711886,9.973823005216625,59.60779048307475,Baseline reference; useful context for the original four-camera geometry.
+3Cam,3,3.6864,87.92067617491159,44.055984395404536,6.369607031763333,41.2389881455842,12.079323825088402,52.54562414309663,Cost-minimal option; lower data burden but high single-view fragility.
+4CamAsym,4,4.9152,92.80268180680196,69.82349432120596,29.20830891406274,23.641800388688637,7.197318193198036,69.27672852014808,Practical recommendation; large robustness gain over 3Cam for one added camera.
+5Cam,5,6.144,95.81380064179041,79.15480600814794,53.81396521721457,15.515716654508577,4.186199358209597,78.5173524687385,Upper-bound robustness; strongest redundancy at highest data burden.

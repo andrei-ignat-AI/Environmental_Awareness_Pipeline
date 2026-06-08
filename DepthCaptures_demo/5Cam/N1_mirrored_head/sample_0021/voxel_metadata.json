@@ -1,0 +1,20 @@
+{
+    "fileName": "voxel_props_occupancy.raw",
+    "contents": "props",
+    "sizeX": 198,
+    "sizeY": 54,
+    "sizeZ": 118,
+    "origin": {
+        "x": -4.949999809265137,
+        "y": 0.0,
+        "z": -2.950000047683716
+    },
+    "voxelSize": {
+        "x": 0.05000000074505806,
+        "y": 0.05000000074505806,
+        "z": 0.05000000074505806
+    },
+    "occupiedVoxels": 32850,
+    "propsOnly": true,
+    "storageOrder": "x + sizeX * (z + sizeZ * y)"
+}

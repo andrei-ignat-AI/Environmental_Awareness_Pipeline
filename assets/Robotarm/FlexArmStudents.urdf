@@ -1,0 +1,108 @@
+<robot name="FlexArm">
+  <!-- LINKS -->
+  <link name="Room"/>
+
+  <link name="Rail"/>
+
+  <link name="Carriage">
+    <visual>
+      <origin xyz="0 0 -2.6" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="STL/Carriage.stl"/>
+      </geometry>
+      <material name="shell">
+        <color rgba="1 1 1 1"/>
+      </material>
+    </visual>
+  </link>
+
+  <link name="HorBeam">
+    <visual>
+      <origin xyz="0 0 -2.6" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="STL/HorBeam.stl"/>
+      </geometry>
+      <material name="shell">
+        <color rgba="1 1 1 1"/>
+      </material>
+    </visual>
+  </link>
+
+  <link name="VerBeam">
+    <visual>
+      <origin xyz="0 1.2 -2.6" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="STL/VerBeam.stl"/>
+      </geometry>
+      <material name="shell">
+        <color rgba="1 1 1 1"/>
+      </material>
+    </visual>
+  </link>
+
+  <link name="Sleeve">
+    <visual>
+      <origin xyz="0 0.4 -1.1" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="STL/Sleeve.stl"/>
+      </geometry>
+      <material name="shell">
+        <color rgba="1 1 1 1"/>
+      </material>
+    </visual>
+  </link>
+
+  <link name="CArc">
+    <visual>
+      <origin xyz="0 1.8 -1.1" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="STL/CArc.stl"/>
+      </geometry>
+      <material name="shell">
+        <color rgba="1 1 1 1"/>
+      </material>
+    </visual>
+  </link>
+
+  <!-- JOINTS -->
+  <joint name="RailMount" type="fixed">
+    <parent link="Room"/>
+    <child link="Rail"/>
+    <origin xyz="0 0 2.6" rpy="0 0 0"/>
+  </joint>
+
+  <joint name="Long" type="prismatic">
+    <parent link="Rail"/>
+    <child link="Carriage"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <axis xyz="0 1 0"/>
+  </joint>
+
+  <joint name="Z1Rot" type="continuous">
+    <parent link="Carriage"/>
+    <child link="HorBeam"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <axis xyz="0 0 1"/>
+  </joint>
+
+  <joint name="Z2Rot" type="continuous">
+    <parent link="HorBeam"/>
+    <child link="VerBeam"/>
+    <origin xyz="0 -1.2 0" rpy="0 0 0"/>
+    <axis xyz="0 0 1"/>
+  </joint>
+
+  <joint name="Prop" type="continuous">
+    <parent link="VerBeam"/>
+    <child link="Sleeve"/>
+    <origin xyz="0 0.8 -1.5" rpy="0 0 0"/>
+    <axis xyz="0 1 0"/>
+  </joint>
+
+  <joint name="CArc" type="continuous">
+    <parent link="Sleeve"/>
+    <child link="CArc"/>
+    <origin xyz="0 -1.4 0" rpy="0 0 0"/>
+    <axis xyz="1 0 0"/>
+  </joint>
+</robot>

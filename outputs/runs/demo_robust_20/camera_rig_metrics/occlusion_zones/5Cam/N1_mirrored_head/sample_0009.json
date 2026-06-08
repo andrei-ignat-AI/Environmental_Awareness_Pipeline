@@ -1,0 +1,35 @@
+{
+  "rig_id": "5Cam",
+  "layout": "N1_mirrored_head",
+  "sample_name": "sample_0009",
+  "sample_index": 9,
+  "metric_scope": "roi",
+  "roi_bounds": {
+    "x": [
+      -4.0,
+      4.0
+    ],
+    "y": [
+      0.0,
+      2.35
+    ],
+    "z": [
+      -2.0,
+      2.0
+    ]
+  },
+  "voxel_size_m": 0.05000000074505806,
+  "grid_shape": [
+    198,
+    54,
+    118
+  ],
+  "num_depth_cameras": 5,
+  "depth_visibility_tolerance_m": 0.075,
+  "free_volume_voxels_total": 545008,
+  "certified_free_volume_fraction": 0.9239534098582038,
+  "single_view_certified_free_volume_fraction": 0.15342894049261663,
+  "redundantly_certified_free_volume_fraction": 0.7705244693655873,
+  "unknown_free_volume_fraction": 0.07604659014179609,
+  "semantics_note": "unknown_free_mask means not certified free by any camera; it is not occupied obstacle geometry."
+}

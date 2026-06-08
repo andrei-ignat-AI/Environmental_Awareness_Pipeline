@@ -1,0 +1,6 @@
+numpy>=1.26
+scipy>=1.11
+open3d>=0.19,<0.20
+mujoco>=3.2
+matplotlib>=3.8
+yourdfpy>=0.0.56

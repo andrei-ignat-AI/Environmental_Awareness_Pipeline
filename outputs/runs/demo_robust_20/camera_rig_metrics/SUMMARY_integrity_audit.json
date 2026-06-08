@@ -1,0 +1,22 @@
+{
+  "passed": false,
+  "sample_folder_count": 20,
+  "matched_scene_index_count": 5,
+  "counts_by_rig_layout": {
+    "3Cam/C1_standard_cath": 1,
+    "3Cam/N1_mirrored_head": 2,
+    "3Cam/N2_mirrored_support": 2,
+    "4CamAsym/C1_standard_cath": 1,
+    "4CamAsym/N1_mirrored_head": 2,
+    "4CamAsym/N2_mirrored_support": 2,
+    "4CamClassic/C1_standard_cath": 1,
+    "4CamClassic/N1_mirrored_head": 2,
+    "4CamClassic/N2_mirrored_support": 2,
+    "5Cam/C1_standard_cath": 1,
+    "5Cam/N1_mirrored_head": 2,
+    "5Cam/N2_mirrored_support": 2
+  },
+  "camera_count_mismatches": [],
+  "missing_pairs": [],
+  "hash_mismatch_files": []
+}

@@ -1,0 +1,35 @@
+{
+  "rig_id": "4CamClassic",
+  "layout": "N1_mirrored_head",
+  "sample_name": "sample_0021",
+  "sample_index": 21,
+  "metric_scope": "roi",
+  "roi_bounds": {
+    "x": [
+      -4.0,
+      4.0
+    ],
+    "y": [
+      0.0,
+      2.35
+    ],
+    "z": [
+      -2.0,
+      2.0
+    ]
+  },
+  "voxel_size_m": 0.05000000074505806,
+  "grid_shape": [
+    198,
+    54,
+    118
+  ],
+  "num_depth_cameras": 4,
+  "depth_visibility_tolerance_m": 0.075,
+  "free_volume_voxels_total": 545349,
+  "certified_free_volume_fraction": 0.8875912489066634,
+  "single_view_certified_free_volume_fraction": 0.30464894957174216,
+  "redundantly_certified_free_volume_fraction": 0.5829422993349213,
+  "unknown_free_volume_fraction": 0.11240875109333656,
+  "semantics_note": "unknown_free_mask means not certified free by any camera; it is not occupied obstacle geometry."
+}

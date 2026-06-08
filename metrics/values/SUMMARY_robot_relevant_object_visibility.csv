@@ -1,0 +1,37 @@
+Object,Semantic Id,Object Group,Rig,Samples,Visible Surface (%),Redundant Object Surface (%),Strongly Redundant Object Surface (%)
+Operator,doctor_operator,Staff,4CamClassic,40,96.6275522700452,55.111889226869984,16.47978868344877
+Operator,doctor_operator,Staff,3Cam,40,99.16769481470882,42.69836808309157,8.315042836811296
+Operator,doctor_operator,Staff,4CamAsym,40,99.74771242558074,76.65842374633375,32.69487536509097
+Operator,doctor_operator,Staff,5Cam,40,99.94887525562373,91.29896750683267,62.61123425260349
+Anesthesia Doctor,doctor_anesthesia,Staff,4CamClassic,40,99.41586876245874,72.35002414889196,0.0
+Anesthesia Doctor,doctor_anesthesia,Staff,3Cam,40,99.76090846209692,22.769102537932913,0.0
+Anesthesia Doctor,doctor_anesthesia,Staff,4CamAsym,40,100.0,97.84824761480108,22.188988170360275
+Anesthesia Doctor,doctor_anesthesia,Staff,5Cam,40,100.0,99.53753269683932,80.92688279578854
+Ultrasound Doctor,doctor_ultrasound,Staff,4CamClassic,40,100.0,83.71668013699156,0.0
+Ultrasound Doctor,doctor_ultrasound,Staff,3Cam,40,98.28046519590168,19.12452733090193,0.0
+Ultrasound Doctor,doctor_ultrasound,Staff,4CamAsym,40,98.60530392630474,19.12452733090193,0.0
+Ultrasound Doctor,doctor_ultrasound,Staff,5Cam,40,99.84899346570816,26.532127278079585,0.5232068307165124
+Radiation Shield,radiation_shield,Movable Equipment,4CamClassic,40,85.36474258006731,47.34336015156973,14.268335840042468
+Radiation Shield,radiation_shield,Movable Equipment,3Cam,40,99.16786007792537,79.57710765300851,16.16938947060651
+Radiation Shield,radiation_shield,Movable Equipment,4CamAsym,40,100.0,98.10194412063325,76.53540280298448
+Radiation Shield,radiation_shield,Movable Equipment,5Cam,40,100.0,98.58664120886324,83.01257023420207
+Anesthesia Machine,anesthesia_machine,Movable Equipment,4CamClassic,40,100.0,96.04735188830789,2.392422668674602
+Anesthesia Machine,anesthesia_machine,Movable Equipment,3Cam,40,78.0347515524334,24.082400765749266,0.0
+Anesthesia Machine,anesthesia_machine,Movable Equipment,4CamAsym,40,98.08106387876983,71.41788955317293,18.25715231083748
+Anesthesia Machine,anesthesia_machine,Movable Equipment,5Cam,40,99.90896524519302,96.01909811719077,58.881639635711046
+Ultrasound,ultrasound,Movable Equipment,4CamClassic,40,93.03147663329841,71.01804262508153,7.6856275626833614
+Ultrasound,ultrasound,Movable Equipment,3Cam,40,77.67115858241527,0.26296196020035195,0.0
+Ultrasound,ultrasound,Movable Equipment,4CamAsym,40,77.66094311657147,0.26296196020035195,0.0
+Ultrasound,ultrasound,Movable Equipment,5Cam,40,79.66218261033151,7.464359684751325,0.0
+Medical Trolley,medical_trolley,Movable Equipment,4CamClassic,40,100.0,99.78153694901017,89.67699340550726
+Medical Trolley,medical_trolley,Movable Equipment,3Cam,40,99.18285581470005,56.55177573253107,6.136343907637998
+Medical Trolley,medical_trolley,Movable Equipment,4CamAsym,40,99.74377429991634,90.85887350006952,48.653202620540135
+Medical Trolley,medical_trolley,Movable Equipment,5Cam,40,100.0,99.03184243475913,75.590410634568
+Display,uhd_tv,Movable Equipment,4CamClassic,40,88.83558771102024,66.86755912894267,35.46713854835571
+Display,uhd_tv,Movable Equipment,3Cam,40,99.85051290103104,68.9709595959596,1.1679292929292928
+Display,uhd_tv,Movable Equipment,4CamAsym,40,100.0,93.28488217458374,59.364205526770284
+Display,uhd_tv,Movable Equipment,5Cam,40,100.0,99.67956935860553,87.62626262626263
+Waste Bin,waste_bin,Low-Priority Obstacle,4CamClassic,40,21.206542817796013,0.0,0.0
+Waste Bin,waste_bin,Low-Priority Obstacle,3Cam,40,66.64942270205427,47.14828897338403,0.0
+Waste Bin,waste_bin,Low-Priority Obstacle,4CamAsym,40,65.9533824044865,47.46835443037975,0.0
+Waste Bin,waste_bin,Low-Priority Obstacle,5Cam,40,99.68694885361552,61.39769046613153,0.0
