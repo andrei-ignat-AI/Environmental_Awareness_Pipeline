@@ -8,6 +8,9 @@ __pycache__/
 .venv/
 venv/
 
+# Local Codex/project memory; never publish with the transferable repo.
+AGENTS.md
+
 # Generated run artifacts are large and reproducible from DepthCaptures.
 outputs/
 

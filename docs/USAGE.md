@@ -87,6 +87,14 @@ Use `--run-id` for a non-default run:
 python main.py view-voxels --rig 4CamAsym --sample 0027 --run-id demo_robust_20 --mode demo
 ```
 
+For the qualitative figure comparing Unity ground truth against decomposition, open the full Unity occupancy for demo sample `0027`:
+
+```bash
+python -m src.view_unity_scene_0027
+```
+
+This view includes the robot and props from Unity before Python decomposition removes the robot. The table is drawn from Unity's table bounds in `scene_objects.json` so it remains visible where props or the patient overlap the raw table/fixture occupancy.
+
 ## View Reconstructed Point Cloud
 
 Point-cloud viewing reconstructs the selected sample on demand and does not save outputs. The viewer colors points by height on a white background so the room structure is easier to inspect:
