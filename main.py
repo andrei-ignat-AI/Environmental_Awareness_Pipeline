@@ -186,6 +186,8 @@ def command_view_voxels(args: argparse.Namespace) -> int:
     if not view_path.exists():
         view_path = _recompute_decomposition_view(args, manifest, run_dir, sample, view_path)
     geoms = visualization_artifacts.load_decomposition_view(view_path)
+    if args.no_occlusions:
+        geoms = visualization_artifacts.hide_occlusion_geometries(geoms)
     if not geoms:
         raise RuntimeError(f"no decomposition view geometries were found in {view_path}")
     print(f"Opening voxel/decomposition view: {run_id} / {sample['relative_path']}")
@@ -302,6 +304,8 @@ def command_recompute_temp(args: argparse.Namespace) -> int:
                 record.sample_name,
             )
             geoms = visualization_artifacts.load_decomposition_view(Path(view_path))
+            if args.no_occlusions:
+                geoms = visualization_artifacts.hide_occlusion_geometries(geoms)
             if geoms:
                 o3d.visualization.draw_geometries(geoms, window_name=f"Temporary voxels: {record.relative_path}")
         if args.stage == "mujoco" and args.view and sample_result.xml_path is not None:
@@ -328,6 +332,14 @@ def _add_view_args(parser: argparse.ArgumentParser) -> None:
     parser.add_argument("--run-id", default=None)
 
 
+def _add_occlusion_view_arg(parser: argparse.ArgumentParser) -> None:
+    parser.add_argument(
+        "--no-occlusions",
+        action="store_true",
+        help="hide occlusion and blind-spot geometry in voxel/decomposition viewers only",
+    )
+
+
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(description="Environmental Awareness Pipeline")
     subparsers = parser.add_subparsers(dest="command", required=True)
@@ -351,6 +363,7 @@ def build_parser() -> argparse.ArgumentParser:
 
     view_voxels = subparsers.add_parser("view-voxels", help="view existing voxel and hull export for one sample")
     _add_view_args(view_voxels)
+    _add_occlusion_view_arg(view_voxels)
     view_voxels.set_defaults(func=command_view_voxels)
 
     view_mujoco = subparsers.add_parser("view-mujoco", help="open an existing MuJoCo XML export for one sample")
@@ -361,6 +374,7 @@ def build_parser() -> argparse.ArgumentParser:
     _add_view_args(recompute)
     recompute.add_argument("--stage", choices=("pointcloud", "voxels", "mujoco"), required=True)
     recompute.add_argument("--view", action="store_true", help="open the relevant native viewer after recomputing")
+    _add_occlusion_view_arg(recompute)
     recompute.set_defaults(func=command_recompute_temp)
 
     return parser

@@ -77,7 +77,7 @@ python main.py view-voxels --rig 4CamAsym --sample 0027 --mode full
 python main.py view-mujoco --rig 4CamAsym --sample 0027 --mode full
 ```
 
-`view-voxels` opens the saved colorful decomposition view: separated components, voxel colors, wireframe hulls, brown occlusion zones, and blind-spot geometry. If an older run is missing this artifact, the command recomputes the decomposition view from the source `DepthCaptures` data and saves it into that run. If a run was generated before occlusion visualization was enabled, rerun that sample or delete its old decomposition-view artifact so it can be recreated.
+`view-voxels` opens the saved colorful decomposition view: separated components, voxel colors, wireframe hulls, brown occlusion zones, and blind-spot geometry. Add `--no-occlusions` to hide occlusion and blind-spot geometry in the viewer only; saved outputs and MuJoCo exports are not changed. If an older run is missing this artifact, the command recomputes the decomposition view from the source `DepthCaptures` data and saves it into that run. If a run was generated before occlusion visualization was enabled, rerun that sample or delete its old decomposition-view artifact so it can be recreated.
 
 `view-mujoco` opens the saved MuJoCo XML export. On macOS, the command automatically relaunches itself through the active virtual environment's `mjpython` executable because MuJoCo requires that launcher for native viewer windows. On Windows, it opens directly from normal `python`.
 
@@ -85,6 +85,7 @@ Use `--run-id` for a non-default run:
 
 ```bash
 python main.py view-voxels --rig 4CamAsym --sample 0027 --run-id demo_robust_20 --mode demo
+python main.py view-voxels --rig 4CamAsym --sample 0027 --run-id demo_robust_20 --mode demo --no-occlusions
 ```
 
 For the qualitative figure comparing Unity ground truth against decomposition, open the full Unity occupancy for demo sample `0027`:
@@ -110,6 +111,7 @@ Temporary recompute commands write into a system temporary directory and delete 
 ```bash
 python main.py recompute-temp --stage pointcloud --rig 4CamAsym --sample 0027 --mode demo --view
 python main.py recompute-temp --stage voxels --rig 4CamAsym --sample 0027 --mode demo --view
+python main.py recompute-temp --stage voxels --rig 4CamAsym --sample 0027 --mode demo --view --no-occlusions
 python main.py recompute-temp --stage mujoco --rig 4CamAsym --sample 0027 --mode demo --view
 ```
 
