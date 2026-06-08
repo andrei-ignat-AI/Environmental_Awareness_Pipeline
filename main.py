@@ -314,65 +314,117 @@ def command_recompute_temp(args: argparse.Namespace) -> int:
 
 
 def _add_common_run_args(parser: argparse.ArgumentParser) -> None:
-    parser.add_argument("--rig", default=None, help="optional rig filter, for example 4CamAsym")
-    parser.add_argument("--sample", default=None, help="optional sample id, for example 0027")
-    parser.add_argument("--layout", default=None, help="optional layout filter")
-    parser.add_argument("--noise", choices=("robust", "none"), default="robust")
-    parser.add_argument("--noise-seed", type=int, default=None)
-    parser.add_argument("--run-id", default=None)
-    parser.add_argument("--skip-camera-metrics", action="store_true")
-    parser.add_argument("--skip-figures", action="store_true")
+    parser.add_argument("--rig", default=None, help="process only one camera rig, for example 4CamAsym")
+    parser.add_argument("--sample", default=None, help="process only one sample id, for example 0027")
+    parser.add_argument("--layout", default=None, help="process only one internal dataset layout folder")
+    parser.add_argument(
+        "--noise",
+        choices=("robust", "none"),
+        default="robust",
+        help="depth-noise mode used before point-cloud reconstruction",
+    )
+    parser.add_argument("--noise-seed", type=int, default=None, help="override the configured global noise seed")
+    parser.add_argument("--run-id", default=None, help="name of the run folder under outputs/runs")
+    parser.add_argument("--skip-camera-metrics", action="store_true", help="skip camera-rig metric generation")
+    parser.add_argument("--skip-figures", action="store_true", help="skip camera-rig metric figure generation")
 
 
 def _add_view_args(parser: argparse.ArgumentParser) -> None:
     parser.add_argument("--rig", required=True, help="camera rig id, for example 4CamAsym")
     parser.add_argument("--sample", required=True, help="sample id, for example 0027")
-    parser.add_argument("--mode", choices=("demo", "full"), default="full")
-    parser.add_argument("--noise", choices=("robust", "none"), default="robust")
-    parser.add_argument("--run-id", default=None)
+    parser.add_argument(
+        "--mode",
+        choices=("demo", "full"),
+        default="full",
+        help="dataset/run family to use when --run-id is not provided",
+    )
+    parser.add_argument(
+        "--noise",
+        choices=("robust", "none"),
+        default="robust",
+        help="noise mode used for default run lookup or on-demand reconstruction",
+    )
+    parser.add_argument("--run-id", default=None, help="explicit run folder under outputs/runs to read from")
 
 
 def _add_occlusion_view_arg(parser: argparse.ArgumentParser) -> None:
     parser.add_argument(
         "--no-occlusions",
         action="store_true",
-        help="hide occlusion and blind-spot geometry in voxel/decomposition viewers only",
+        help="hide occlusion and blind-spot geometry in voxel/decomposition viewers only; saved outputs are unchanged",
     )
 
 
 def build_parser() -> argparse.ArgumentParser:
-    parser = argparse.ArgumentParser(description="Environmental Awareness Pipeline")
+    formatter = argparse.ArgumentDefaultsHelpFormatter
+    parser = argparse.ArgumentParser(
+        description="Environmental Awareness Pipeline",
+        formatter_class=formatter,
+    )
     subparsers = parser.add_subparsers(dest="command", required=True)
 
-    run_demo = subparsers.add_parser("run-demo", help="run the committed 20-sample demo dataset")
+    run_demo = subparsers.add_parser(
+        "run-demo",
+        help="run the committed 20-sample demo dataset",
+        formatter_class=formatter,
+    )
     _add_common_run_args(run_demo)
     run_demo.set_defaults(func=command_run_demo)
 
-    run_full = subparsers.add_parser("run-full", help="run the full local DepthCaptures dataset")
+    run_full = subparsers.add_parser(
+        "run-full",
+        help="run the full local DepthCaptures dataset",
+        formatter_class=formatter,
+    )
     _add_common_run_args(run_full)
     run_full.set_defaults(func=command_run_full)
 
-    inspect = subparsers.add_parser("inspect-config", help="print effective pipeline config")
-    inspect.add_argument("--mode", choices=("demo", "full"), default="demo")
+    inspect = subparsers.add_parser(
+        "inspect-config",
+        help="print effective pipeline config",
+        formatter_class=formatter,
+    )
+    inspect.add_argument("--mode", choices=("demo", "full"), default="demo", help="dataset mode to inspect")
     _add_common_run_args(inspect)
     inspect.set_defaults(func=command_inspect_config)
 
-    view_pointcloud = subparsers.add_parser("view-pointcloud", help="reconstruct and view a point cloud for one sample")
+    view_pointcloud = subparsers.add_parser(
+        "view-pointcloud",
+        help="reconstruct and view a point cloud for one sample",
+        formatter_class=formatter,
+    )
     _add_view_args(view_pointcloud)
     view_pointcloud.set_defaults(func=command_view_pointcloud)
 
-    view_voxels = subparsers.add_parser("view-voxels", help="view existing voxel and hull export for one sample")
+    view_voxels = subparsers.add_parser(
+        "view-voxels",
+        help="view the saved colorful decomposition for one sample",
+        formatter_class=formatter,
+    )
     _add_view_args(view_voxels)
     _add_occlusion_view_arg(view_voxels)
     view_voxels.set_defaults(func=command_view_voxels)
 
-    view_mujoco = subparsers.add_parser("view-mujoco", help="open an existing MuJoCo XML export for one sample")
+    view_mujoco = subparsers.add_parser(
+        "view-mujoco",
+        help="open an existing MuJoCo XML export for one sample",
+        formatter_class=formatter,
+    )
     _add_view_args(view_mujoco)
     view_mujoco.set_defaults(func=command_view_mujoco)
 
-    recompute = subparsers.add_parser("recompute-temp", help="temporarily recompute one sample without saving outputs")
+    recompute = subparsers.add_parser(
+        "recompute-temp",
+        help="temporarily recompute one sample without saving outputs",
+        formatter_class=formatter,
+    )
     _add_view_args(recompute)
-    recompute.add_argument("--stage", choices=("pointcloud", "voxels", "mujoco"), required=True)
+    recompute.add_argument(
+        "--stage",
+        choices=("pointcloud", "voxels", "mujoco"),
+        required=True,
+        help="pipeline stage to recompute in the temporary directory",
+    )
     recompute.add_argument("--view", action="store_true", help="open the relevant native viewer after recomputing")
     _add_occlusion_view_arg(recompute)
     recompute.set_defaults(func=command_recompute_temp)
