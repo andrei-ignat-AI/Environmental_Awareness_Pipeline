@@ -22,6 +22,8 @@ python main.py view-mujoco --rig 4CamAsym --sample 0027 --mode full
 python main.py recompute-temp --stage voxels --rig 4CamAsym --sample 0027 --mode demo --view
 ```
 
+On macOS, `view-mujoco` automatically relaunches through the active virtual environment's `mjpython` viewer launcher when needed. Windows uses the normal `python` command.
+
 Documentation:
 
 - `docs/INSTALLATION.md`

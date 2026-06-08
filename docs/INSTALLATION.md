@@ -36,10 +36,19 @@ python -m pip install -r requirements.txt
 python main.py inspect-config
 ```
 
-MuJoCo native viewer windows may require `mjpython` on macOS:
+MuJoCo native viewer windows use the same command on macOS and Windows:
 
 ```bash
-mjpython main.py view-mujoco --rig 4CamAsym --sample 0027 --mode full
+python main.py view-mujoco --rig 4CamAsym --sample 0027 --mode full
+```
+
+On macOS, the CLI automatically relaunches this viewer command through the
+`mjpython` executable installed in the active `.venv`. If it reports that
+`mjpython` is missing, activate the virtual environment and reinstall
+`requirements.txt`. The direct fallback is:
+
+```bash
+python .venv/bin/mjpython main.py view-mujoco --rig 4CamAsym --sample 0027 --mode full
 ```
 
 ## Data Folders

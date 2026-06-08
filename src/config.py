@@ -83,6 +83,7 @@ class DecompositionConfig:
     merge_occlusions_with_objects: bool = getattr(USER_CONFIG, "MERGE_OCCLUSIONS_WITH_OBJECTS", False)
     include_detached_occlusion_zones: bool = getattr(USER_CONFIG, "INCLUDE_DETACHED_OCCLUSION_ZONES", True)
     build_occlusion_zone_boxes: bool = getattr(USER_CONFIG, "BUILD_OCCLUSION_ZONE_BOXES", True)
+    show_occlusion_zone_boxes: bool = getattr(USER_CONFIG, "SHOW_OCCLUSION_ZONE_BOXES", True)
     show_blind_spots: bool = getattr(USER_CONFIG, "SHOW_BLIND_SPOTS", True)
     occlusion_box_margin_m: float = getattr(USER_CONFIG, "OCCLUSION_BOX_MARGIN_M", 0.05)
     occlusion_attachment_radius_voxels: int = getattr(USER_CONFIG, "OCCLUSION_ATTACHMENT_RADIUS_VOXELS", 1)

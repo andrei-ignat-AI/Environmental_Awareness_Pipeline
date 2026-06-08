@@ -4,6 +4,9 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
+import shlex
+import shutil
 import sys
 import tempfile
 import time
@@ -204,13 +207,46 @@ def command_view_pointcloud(args: argparse.Namespace) -> int:
     return 0
 
 
+def _find_mjpython() -> str | None:
+    sibling = Path(sys.executable).with_name("mjpython")
+    if sibling.exists():
+        return str(sibling)
+    return shutil.which("mjpython")
+
+
+def _relaunch_macos_mujoco_viewer_with_mjpython() -> None:
+    if sys.platform != "darwin":
+        return
+    if Path(sys.executable).name == "mjpython" or os.environ.get("MJPYTHON_BIN"):
+        return
+    if os.environ.get("ENV_AWARENESS_MJPYTHON_REEXEC") == "1":
+        raise RuntimeError(
+            "MuJoCo's macOS viewer still is not running under mjpython after relaunch. "
+            "Run `python .venv/bin/mjpython main.py view-mujoco ...` from the repository root."
+        )
+
+    mjpython = _find_mjpython()
+    if mjpython is None:
+        raise RuntimeError(
+            "MuJoCo's macOS viewer requires mjpython, but it was not found. "
+            "Activate the virtual environment, reinstall requirements, and rerun this command. "
+            "Direct fallback: `python .venv/bin/mjpython main.py view-mujoco ...`."
+        )
+
+    command = [sys.executable, mjpython, str(Path(__file__).resolve()), *sys.argv[1:]]
+    env = os.environ.copy()
+    env["ENV_AWARENESS_MJPYTHON_REEXEC"] = "1"
+    printable = " ".join(shlex.quote(part) for part in command)
+    print(f"macOS MuJoCo viewer requires mjpython; relaunching with: {printable}", flush=True)
+    os.execve(sys.executable, command, env)
+
+
 def _open_mujoco(xml_path: Path) -> None:
+    _relaunch_macos_mujoco_viewer_with_mjpython()
+
     import mujoco
     import mujoco.viewer
 
-    if sys.platform == "darwin" and Path(sys.executable).name != "mjpython":
-        print("On macOS, MuJoCo's native viewer may require mjpython.")
-        print(f"Retry with: mjpython main.py view-mujoco --rig ... --sample ... --run-id ...")
     model = mujoco.MjModel.from_xml_path(str(xml_path))
     data = mujoco.MjData(model)
     with mujoco.viewer.launch_passive(model, data, show_left_ui=False, show_right_ui=False) as viewer:

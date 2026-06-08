@@ -44,7 +44,7 @@ def apply_config(config: PipelineConfig) -> None:
     source.MERGE_OCCLUSIONS_WITH_OBJECTS = cfg.merge_occlusions_with_objects
     source.INCLUDE_DETACHED_OCCLUSION_ZONES = cfg.include_detached_occlusion_zones
     source.BUILD_OCCLUSION_ZONE_BOXES = cfg.build_occlusion_zone_boxes
-    source.SHOW_OCCLUSION_ZONE_BOXES = False
+    source.SHOW_OCCLUSION_ZONE_BOXES = cfg.show_occlusion_zone_boxes
     source.SHOW_BLIND_SPOTS = cfg.show_blind_spots
     source.OCCLUSION_BOX_MARGIN_M = cfg.occlusion_box_margin_m
     source.OCCLUSION_ATTACHMENT_RADIUS_VOXELS = cfg.occlusion_attachment_radius_voxels
