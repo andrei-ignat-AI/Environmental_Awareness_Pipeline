@@ -65,8 +65,8 @@ EXPECTED_CAMERA_COUNTS = {
 
 LAYOUT_ORDER = [
     "C1_standard_cath",
-    "N1_mirrored_head",
     "C2_radial_echo",
+    "N1_mirrored_head",
     "N2_mirrored_support",
 ]
 
@@ -150,10 +150,10 @@ ROBOT_RELEVANT_GROUPS = {
 }
 
 LAYOUT_DISPLAY_NAMES = {
-    "C1_standard_cath": "Standard Cath",
-    "N1_mirrored_head": "Mirrored Head",
-    "C2_radial_echo": "Radial Echo",
-    "N2_mirrored_support": "Mirrored Support",
+    "C1_standard_cath": "Cath baseline",
+    "C2_radial_echo": "Cath shifted",
+    "N1_mirrored_head": "Neuro head-side",
+    "N2_mirrored_support": "Neuro shifted",
 }
 
 SUMMARY_METRICS = [
