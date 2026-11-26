@@ -1,8 +1,24 @@
 # Environmental Awareness Pipeline
 
-Clean, transferable Python pipeline for reconstructing Unity depth captures, exporting MuJoCo collision geometry, visualizing intermediate artifacts, and reading the report metrics.
+Python pipeline that turns simulated multi-camera depth captures of an interventional cath lab (Philips Azurion 7 robotic C-arm) into 3D obstacle geometry for collision-aware motion planning. Built for an MSc team internship with Philips (Feb–Jul 2026). Simulation data comes from the companion Unity project, [Environmental_Awareness_Simulation_Environment](https://github.com/andrei-ignat-AI/Environmental_Awareness_Simulation_Environment).
 
-Start here:
+## Pipeline
+
+```text
+Unity depth captures (depth + calibration + scene metadata, 4 camera rigs)
+  -> dataset I/O and validation
+  -> sensor-noise model ("robust" or "none")
+  -> robot removal and 3D reconstruction (point clouds, voxels; Open3D)
+  -> occlusion analysis and geometry decomposition
+  -> MuJoCo collision-geometry export
+  -> collision-aware planning check and metrics (camera rig, collision geometry)
+  -> run manifest, logs and artifacts under outputs/runs/<run_id>/
+```
+
+Everything runs from one CLI (`main.py`). Each run is reproducible from its config and writes a JSON run manifest and a log. Input and output formats are documented in [`docs/OUTPUT_SCHEMA.md`](docs/OUTPUT_SCHEMA.md).
+
+## Quick start
+
 
 1. Install Python 3.11.
 2. Create and activate a virtual environment.
